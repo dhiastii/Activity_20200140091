@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hasil Data KTP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Data KTP Warga Negara Indonesia</div>
+        <hr>
+        <table border="1">
+      
+            <th>ID</th>
+            <th>Nomor KTP</th>
+            <th>Nama</th>  
+            <th>Alamat</th>
+            <tbody th:each="ktpktp,count:${Data1}">
+                <tr> 
+                <td th:text="${ktpktp [0]}"></td>
+                <td th:text="${ktpktp [1]}"></td>
+                <td th:text="${ktpktp [2]}"></td>
+                <td th:text="${ktpktp [3]}"></td>
+     
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+    </body>
+</html>
